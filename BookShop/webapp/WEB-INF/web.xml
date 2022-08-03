@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>SuvletTest</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 정보설정 -->
+  <servlet>
+  	<!-- name은 mapping에서 사용 -->
+  	<servlet-name>BookShop</servlet-name>
+  	<!-- 패키지명 + 자바파일명 .java는 생략 -->
+  	<servlet-class>controller.MypageFrontController</servlet-class>
+  </servlet>
+  <!-- url mapping -->
+  <servlet-mapping>
+  	<servlet-name>BookShop</servlet-name>
+  	<!-- 컨트롤 + 스페이스바 -->
+  	<url-pattern>*.me</url-pattern><!-- 패턴지정 -->
+  </servlet-mapping>
+</web-app>
